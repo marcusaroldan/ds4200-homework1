@@ -3,13 +3,31 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-    <title>About me: Marcus Roldan</title>
+    <title>Marcus Roldan</title>
     <link href="styles/style.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" />
   </head>
   <body>
-    <h3>Just in case you're wondering what I look like...</h3>
-    <img src="images/new-york/20231209_154629.jpg" alt="Me sporting a trench-coat, looking stylish..." />
+    <h3>Welcome to my personal website!</h3>
+    <div class="slideshow">
+        <div class="slides fade">
+            <div class="numbertext">(1 / 2)</div>
+            <img src="images/new-york/trench-coat.jpg" style="width:100%">
+            <div class="text">Kenzo Trench Coat</div>
+        </div>
+
+        <div class="slides fade">
+            <div class="numbertext">(2 / 2)</div>
+            <img src="images/new-york/robe.jpg" style="width:100%">
+            <div class="text">Kenzo Robe</div>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+    </div>
     <h3> A little about me:</h3>
     <p>Hey there! Welcome to my peresonal website. I hope you enjoy your stay and peruse the content it has to offer. My name is Marcus Roldan, and I am a 21-year-old, fourth-year Computer Science student at Northeastern University. Essentially my whole life I have played soccer, and I've been a devout supporter of FC Bayern München since I was 9 years old!</p>
     <p>I've also been learning Spanish for many years now and (finally) have acheived a high degree of proficiency in the language; I can finally talk with many of my relatives who only speak Spanish. </p>
@@ -21,8 +39,18 @@
         <li>Jamaica</li>
         <li>Puerto Rico</li>
     </ul>
-    <h3>Here is a link to my <a href="https://github.com/marcusaroldan">GitHub</a>!</h3> 
-    <script src="scripts/main.js"></script>
-    <button>Change user</button>
+    <h3>Here is a link to my <a href="https://github.com/marcusaroldan">GitHub</a>!</h3>
+    <h3>Coming Soon!</h3>
+    <ul>
+        <li>Interactive travel gallery</li>
+        <li>Resume preview</li>
+        <li>Navigation bar to other pages</li>
+    </ul>
+    <h3>How long until the final project is due?</h3>
+    <div class="countdown-container">
+        <div class="countdown-text" id="time-remaining"></div>
+    </div>
+    <script src="scripts/slideshow.js"></script>
+    <script src="scripts/countdown.js"></script>
   </body>
 </html>
